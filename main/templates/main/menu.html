@@ -1,0 +1,21 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/menu.css' %}">
+
+<div class="navbar">
+    <a href="{% url 'index' %}">Главная</a>
+    <div class="dropdown">
+        <a href="{% url 'index' %}" class="dropbtn">Мое резюме</a>
+        <div class="dropdown-content" id="resumeDropdown">
+            <a href="{% url 'summary' %}">Просмотр</a>
+            <a href="{% url 'download_summary' %}">Скачать PDF</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="{% url 'index' %}" class="dropbtn">Мои проекты</a>
+        <div class="dropdown-content" id="projectsDropdown">
+            <a href="{% url 'my_project' %}">Просмотр</a>
+            <a href="{% url 'download_my_project' %}">Скачать PDF</a>
+        </div>
+    </div>
+</div>
