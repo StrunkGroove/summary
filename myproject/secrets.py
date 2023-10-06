@@ -1,1 +1,0 @@
-key = '($u^$$zlzahssdq-ca%g)de066&1*#^ukjjgh#j60@0q13%hij8nyu1i'
